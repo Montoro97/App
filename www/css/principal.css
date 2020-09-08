@@ -30,7 +30,7 @@ body {
 .appPrincipal {
     position: absolute;
     /* position in the center of the screen */
-    left: 20%;
+    /* left: 20%; */
     top: 20%;
     height: 50px;
     /* text area height */
@@ -52,12 +52,44 @@ body {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 30px;
+    position: fixed;
     font-weight: normal;
     margin: 0;
     overflow: visible;
     padding: 0;
+    width: 100%;
     text-align: center;
+}
+
+.submenus {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.submenus li {
+    display: inline;
+}
+
+.submenus a {
+    text-decoration: none;
+    margin: -4px;
+	color: #FFFFFF;
+	background-color: #397bdf;
+	text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 26px;
+    padding-left: 26px;
+}
+
+.submenus a:hover, .horizontal a:active {
+	background-color: #09439b;
 }
 
 @media screen and (prefers-color-scheme: dark) {
